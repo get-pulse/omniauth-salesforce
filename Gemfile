@@ -1,15 +1,17 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
 gemspec
 
 group :development do
-  gem 'rubocop', '~> 0.52.1', require: false
+  gem 'rubocop', '~> 1.62', require: false
 end
 
 group :development, :test do
-  gem 'guard'
-  gem 'guard-rspec'
-  gem 'guard-bundler'
-  gem 'rb-fsevent'
   gem 'growl'
+  gem 'guard'
+  gem 'guard-bundler'
+  gem 'guard-rspec'
+  gem 'rb-fsevent'
 end
